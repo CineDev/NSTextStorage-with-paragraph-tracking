@@ -156,12 +156,12 @@ public class DescriptedTextStorage: NSTextStorage {
 	- parameter range: range which might have an inconsistent attribute state
 	*/
 	public override func fixAttributes(in range: NSRange) {
-		super.fixAttributes(in: range)
-		
 		if self.needsFixDescriptors {
 			self.fixParagraphDescriptors(in: range)
 		}
 
+		super.fixAttributes(in: range)
+		
 		guard range.length > 0 else { return }
 		let descriptors = self.paragraphDescriptors(in: range)
 		
