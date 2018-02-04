@@ -14,7 +14,7 @@ The ParagraphDescriptor struct basically holds the identifier of the paragraph a
 
 The DescriptedTextStorage object calculates paragraph ranges in the edited range every time when replaceCharacterInRage method gets called. Diring the attribute fixing it sets as an attribute the identifer of the paragraph descriptor corresponding with the changed paragraph range.
 
-If user sets some attribute in the text storage without changing the text, the DescriptedTextStorage object will make sure that those new attribute will have the correct paragraph idenifier before actually setting the attrubutes.
+If user sets some attribute in the text storage without changing the text, the DescriptedTextStorage object will make sure that those new attributes have the correct paragraph idenifier before actually applying the attrubutes.
 
 ## All written in Swift 4.0.
 
