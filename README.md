@@ -10,4 +10,4 @@ Just include DescriptedTextStorage.swift and ParagraphDescriptor.swift in your p
 
 ## All written in Swift 4.0.
 
-###### Performance is really good. Last time I checked, I got topmost 16% of CPU utilization in System Monitor even when I keep bumping my keyboard non-stop. Performance might drop when you select and delete a huge block of text, but since that is a rare situation, I decided to forget about it. My focus was on the bulletproof algorhythm that is super efficient in common scenarios.
+###### Performance is really good. Last time I checked, I got topmost 16% of CPU utilization in System Monitor even when I keep bumping my keyboard non-stop (Apple Pages will take at least 30-35% of CPU when you type fast, so I consider my job done well). Performance might drop when you select and delete a huge block of text, but since that is a rare situation, I decided to forget about it. My focus was on the bulletproof algorhythm that is super efficient in common scenarios.
