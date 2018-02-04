@@ -19,7 +19,7 @@ public struct ParagraphDescriptor: Equatable {
 		return lhs.identifier == rhs.identifier
 	}
 	
-	init(identifier: UUID = UUID(), range: NSRange = NSRange(value: 0)) {
+	init(identifier: UUID = UUID(), range: NSRange = NSMakeRange(0, 0)) {
 		self.identifier = identifier
 		self.range = range
 	}
