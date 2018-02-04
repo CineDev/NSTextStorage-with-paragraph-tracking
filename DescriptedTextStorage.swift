@@ -54,8 +54,12 @@ public class DescriptedTextStorage: NSTextStorage {
 	/// Delegate watches for any edits in the storage
 	public weak var paragraphDelegate : DescriptedTextStorageDelegate?
 	
+	/// Flag indicating that the storage text was changed and we need to fixt descriptors
 	private var needsFixDescriptors: Bool = false
 	
+	/// private cache of paragraph before editing the storage text
+	private var beforeParagraphs: [String] = []
+
 	/// Text storage with read-only access
 	override public var string : String {
 		return self.storage.mutableString as String
@@ -96,17 +100,9 @@ public class DescriptedTextStorage: NSTextStorage {
 	// MARK: - String Processing
 	
 	public override func attributes(at location: Int, effectiveRange range: NSRangePointer?) -> [NSAttributedStringKey : Any] {
-		guard self.length > 0 else {
-			return [:]
-		}
-		if location == self.length, location > 0 {
-			return self.storage.attributes(at: location - 1, effectiveRange: range)
-		}
 		return self.storage.attributes(at: location, effectiveRange: range)
 	}
-	
-	private var beforeParagraphs: [String] = []
-	
+		
 	
 	override public func replaceCharacters(in range: NSRange, with str: String) {
 		self.needsFixDescriptors = true
