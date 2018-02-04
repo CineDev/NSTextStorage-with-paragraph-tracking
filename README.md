@@ -23,12 +23,11 @@ Just include DescriptedTextStorage.swift, ParagraphDescriptor.swift, CustromAttr
     // (a blank text storage still has one empty paragraph)
     textStorage.paragraphDelegate?.textStorage(textStorage, didAdd: textStorage.paragraphDescriptor(atParagraphIndex: 0))
     
-    // that's it!
-    // the rest is up to you and depends how you would implement the DescriptedTextStorageDelegate protocol
-    // which will update your model synchronously with changes in text storage paragraphs.
+That's it!
+
+The rest is up to you and depends how you would implement the DescriptedTextStorageDelegate protocol which will update your model synchronously with changes in text storage paragraphs.
     
-    // but all the heavy job is done: the text storage will automatically track all the paragraph changes
-    // and immediately notify its paragraphDelegate.
+But all the heavy job is done: the text storage will automatically track all the paragraph changes and immediately notify its paragraphDelegate.
 
 ### Basic Algorhythm Description:
 The ParagraphDescriptor struct basically holds the identifier of the paragraph and its range in the text storage.
