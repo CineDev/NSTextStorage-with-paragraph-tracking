@@ -4,7 +4,7 @@ DescriptedTextStorage is a subclass of NSTextStorage class. It works with whole 
 
 This behavior is important when any paragraph represents a specific object in your model. So, every single change to the text storage will be	reflected	in the appropriate object of your model.
 
-As a result, you now get an opportunity to track changes paragraph-by-paragraph and reflect those changes in your model. That will make it easy not only to build a custom logic with your model, but to persist with, let's say, Core Data as well.
+As a result, you now get an opportunity to track changes paragraph-by-paragraph and reflect those changes in your model. That will make it easy not only to build a custom business logic with your model, but also to convert that model into a persistant state using, let's say, Core Data.
 
 ##### Important: do not enable lazily attribute fixing (fixesAttributesLazily property) since it will get the whole algorhythm broken.
 
