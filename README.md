@@ -6,7 +6,8 @@ This behavior is important when any paragraph represents a specific object in yo
 
 As a result, you now get an opportunity to track changes by paragraph and reflect those changes to your model and make it easy to persist with, let's say, Core Data.
 
-Just include DescriptedTextStorage.swift and ParagraphDescriptor.swift in your project. Optionally you can add DescriptedTextStorageTests.swift in the Unit Test target of your project to make sure everything works fine.
+## Usage:
+Just include DescriptedTextStorage.swift, ParagraphDescriptor.swift and CustromAttributes.swift in your project. Optionally you can add DescriptedTextStorageTests.swift in the Unit Test target of your project to make sure everything works fine.
 
 ### Basic Algorhythm Description:
 The ParagraphDescriptor struct basically holds the identifier of the paragraph and its range in the text storage.
