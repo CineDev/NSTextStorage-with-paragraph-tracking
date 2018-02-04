@@ -9,10 +9,10 @@
 import Foundation
 
 public struct ParagraphDescriptor: Equatable {
-	/// Unique identifier of the paragraph descriptor
+	/// Unique identifier of the paragraph
 	public let identifier: UUID
 	
-	/// Range of the paragraph descriptor
+	/// Range of the paragraph
 	public var range: NSRange
 	
 	public static func ==(lhs: ParagraphDescriptor, rhs: ParagraphDescriptor) -> Bool {
