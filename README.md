@@ -9,7 +9,22 @@ As a result, you now get an opportunity to track changes paragraph-by-paragraph 
 ##### Important: do not enable lazily attribute fixing (fixesAttributesLazily property) since it will get the whole algorhythm broken.
 
 ### Usage:
-Just include DescriptedTextStorage.swift, ParagraphDescriptor.swift and CustromAttributes.swift in your project. Optionally you can add DescriptedTextStorageTests.swift into the Unit Test target of your project to make sure everything works fine.
+Just include DescriptedTextStorage.swift, ParagraphDescriptor.swift, CustromAttributes.swift and String+Extensions.swift in your project. Optionally you can add DescriptedTextStorageTests.swift into the Unit Test target of your project to make sure everything works fine.
+
+Basic code to make it work:
+
+    // setup the system
+    let textStorage = DescriptedTextStorage()
+		textStorage.paragraphDelegate = yourDelegateObject
+    
+    // make sure the deletage is syncronized with blank text storage state (blank text storage still has one paragraph)
+    textStorage.paragraphDelegate?.textStorage(textStorage, didAdd: textStorage.paragraphDescriptor(atParagraphIndex: 0))
+    
+    // that's it! the rest is up to you and depends how you would implement the DescriptedTextStorageDelegate protocol
+    // which will be updating your model due to changes in text storage paragraphs.
+    
+    // but all the heavy job is done: text storage will automatically track all the paragraph changes and immediately
+    // notify its paragraphDelegate.
 
 ### Basic Algorhythm Description:
 The ParagraphDescriptor struct basically holds the identifier of the paragraph and its range in the text storage.
