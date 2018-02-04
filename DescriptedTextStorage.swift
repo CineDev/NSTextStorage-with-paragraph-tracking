@@ -64,6 +64,10 @@ public class DescriptedTextStorage: NSTextStorage {
 	public override var length: Int {
 		return self.storage.length
 	}
+	
+	public override var fixesAttributesLazily: Bool {
+		return false
+	}
 
 	public override init() {
 		super.init()
