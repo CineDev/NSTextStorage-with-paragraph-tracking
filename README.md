@@ -17,8 +17,7 @@ Just include DescriptedTextStorage.swift, ParagraphDescriptor.swift, CustromAttr
     let textStorage = DescriptedTextStorage()
     textStorage.paragraphDelegate = yourDelegateObject
     
-    // make sure the deletage is syncronized with the blank text storage state
-    // (a blank text storage still has one empty paragraph)
+    // make sure the deletage is syncronized with the blank text storage state (a blank text storage still has one empty paragraph)
     textStorage.paragraphDelegate?.textStorage(textStorage, didAdd: textStorage.paragraphDescriptor(atParagraphIndex: 0))
     
 ##### Implementing the conformance to DescriptedTextStorageDelegate protocol, use the 'identifier' property of a ParagraphDescriptor object to sync your model with paragraphs of the text storage.
