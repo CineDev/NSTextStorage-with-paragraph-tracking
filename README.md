@@ -23,9 +23,9 @@ Basic code to make it work:
     
     // that's it!
     // the rest is up to you and depends how you would implement the DescriptedTextStorageDelegate protocol
-    // which will be updating your model due to changes in text storage paragraphs.
+    // which will update your model synchronously with changes in text storage paragraphs.
     
-    // but all the heavy job is done: text storage will automatically track all the paragraph changes
+    // but all the heavy job is done: the text storage will automatically track all the paragraph changes
     // and immediately notify its paragraphDelegate.
 
 ### Basic Algorhythm Description:
