@@ -13,7 +13,7 @@ Just include DescriptedTextStorage.swift, ParagraphDescriptor.swift, CustromAttr
 
 ##### Use the 'identifier' property of ParagraphDescriptor to sync your model with paragraphs of the text storage.
 
-Basic code to make it work:
+#### Basic code to make it work:
 
     // setup the system
     let textStorage = DescriptedTextStorage()
