@@ -9,3 +9,5 @@ As a result, you now get an opportunity to track changes by paragraph and reflec
 Just include DescriptedTextStorage.swift and ParagraphDescriptor.swift in your project. Optionally you can add DescriptedTextStorageTests.swift in the Unit Test target of your project to make sure everything works fine.
 
 ## All written in Swift 4.0.
+
+###### Performance of this implementation is really good. Last time I checked, I got topmost 16% of CPU utilization in System Monitor even when I keep bumping my keyboard non-stop. Performance might drop when you select and delete a huge block of text, but since that is a rare situation, I decided to forget about it. My focus was on bulletproof algorhythm that is super efficient in common scenarios.
