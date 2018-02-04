@@ -6,16 +6,16 @@
 //  Copyright © 2018 Cine Studio. All rights reserved.
 //
 //
-//	DescriptedTextStorage is a subclass of NSTextStorage class.
-//	It works with whole paragraphs of text and notifies its	paragraph delegate
-//	if user changes any paragraphs. Delegate receives touched paragraph descriptors.
+//  DescriptedTextStorage is a subclass of NSTextStorage class.
+//  It works with whole paragraphs of text and notifies its	paragraph delegate
+//  if user changes any paragraphs. Delegate receives touched paragraph descriptors.
 //
-//	This behavior is important when any paragraph represents a specific object
-//	in your model. So, every single change to the text storage will be	reflected
-//	in the appropriate object of your model.
+//  This behavior is important when any paragraph represents a specific object
+//  in your model. So, every single change to the text storage will be	reflected
+//. in the appropriate object of your model.
 //
-//	As a result, now you get the opportunity to track changes by paragraph
-//	and reflect those changes to your model and make it easy to persist with, let's say, Core Data.
+//  As a result, now you get an opportunity to track changes by paragraph
+//  and reflect those changes to your model and make it easy to persist with, let's say, Core Data.
 
 #if (os(iOS))
 	import UIKit
