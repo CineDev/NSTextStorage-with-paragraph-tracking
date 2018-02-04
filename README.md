@@ -4,7 +4,7 @@ DescriptedTextStorage is a subclass of NSTextStorage class. It works with whole 
 
 This behavior is important when any paragraph represents a specific object in your model. So, every single change to the text storage will be	reflected	in the appropriate object of your model.
 
-As a result, you now get an opportunity to track changes paragraph-by-paragraph and reflect those changes in your model. That will make it easy to persist with, let's say, Core Data.
+As a result, you now get an opportunity to track changes paragraph-by-paragraph and reflect those changes in your model. That will make it easy not only to build a custom logic with your model, but to persist with, let's say, Core Data as well.
 
 ### Usage:
 Just include DescriptedTextStorage.swift, ParagraphDescriptor.swift and CustromAttributes.swift in your project. Optionally you can add DescriptedTextStorageTests.swift into the Unit Test target of your project to make sure everything works fine.
