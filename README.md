@@ -11,7 +11,7 @@ As a result, you now get an opportunity to track changes paragraph-by-paragraph 
 ### Usage:
 Just include DescriptedTextStorage.swift, ParagraphDescriptor.swift, CustromAttributes.swift and String+Extensions.swift in your project. Optionally you can add DescriptedTextStorageTests.swift into the Unit Test target of your project to make sure everything works fine.
 
-##### Use the 'identifier' property of a ParagraphDescriptor object to sync your model with paragraphs of the text storage.
+##### Implementing the conformance to DescriptedTextStorageDelegate protocol, use the 'identifier' property of a ParagraphDescriptor object to sync your model with paragraphs of the text storage.
 
 #### Basic code to make it work:
 
