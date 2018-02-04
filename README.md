@@ -15,7 +15,7 @@ Basic code to make it work:
 
     // setup the system
     let textStorage = DescriptedTextStorage()
-		textStorage.paragraphDelegate = yourDelegateObject
+    textStorage.paragraphDelegate = yourDelegateObject
     
     // make sure the deletage is syncronized with blank text storage state (blank text storage still has one paragraph)
     textStorage.paragraphDelegate?.textStorage(textStorage, didAdd: textStorage.paragraphDescriptor(atParagraphIndex: 0))
