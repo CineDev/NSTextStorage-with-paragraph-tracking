@@ -6,6 +6,9 @@ This behavior is important when any paragraph represents a specific object in yo
 
 As a result, you now get an opportunity to track changes paragraph-by-paragraph and reflect those changes in your model. That will make it easy not only to build a custom logic with your model, but to persist with, let's say, Core Data as well.
 
+##### Imprortant:
+###### Do not enable lazily attribute fixing since it will break the whole algorhythm.
+
 ### Usage:
 Just include DescriptedTextStorage.swift, ParagraphDescriptor.swift and CustromAttributes.swift in your project. Optionally you can add DescriptedTextStorageTests.swift into the Unit Test target of your project to make sure everything works fine.
 
