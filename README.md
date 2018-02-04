@@ -17,14 +17,16 @@ Basic code to make it work:
     let textStorage = DescriptedTextStorage()
     textStorage.paragraphDelegate = yourDelegateObject
     
-    // make sure the deletage is syncronized with blank text storage state (blank text storage still has one paragraph)
+    // make sure the deletage is syncronized with the blank text storage state
+    // (a blank text storage still has one empty paragraph)
     textStorage.paragraphDelegate?.textStorage(textStorage, didAdd: textStorage.paragraphDescriptor(atParagraphIndex: 0))
     
-    // that's it! the rest is up to you and depends how you would implement the DescriptedTextStorageDelegate protocol
+    // that's it!
+    // the rest is up to you and depends how you would implement the DescriptedTextStorageDelegate protocol
     // which will be updating your model due to changes in text storage paragraphs.
     
-    // but all the heavy job is done: text storage will automatically track all the paragraph changes and immediately
-    // notify its paragraphDelegate.
+    // but all the heavy job is done: text storage will automatically track all the paragraph changes
+    // and immediately notify its paragraphDelegate.
 
 ### Basic Algorhythm Description:
 The ParagraphDescriptor struct basically holds the identifier of the paragraph and its range in the text storage.
