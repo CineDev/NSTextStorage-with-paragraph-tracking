@@ -26,7 +26,7 @@ The rest is up to you and depends how you would implement the DescriptedTextStor
 
 ##### Implementing the conformance to DescriptedTextStorageDelegate protocol, use the 'identifier' property of a ParagraphDescriptor object to sync your model with paragraphs of the text storage.
     
-But all the heavy job is done: the text storage will automatically track all the paragraph changes and immediately notify its paragraphDelegate.
+Now it will work. The text storage will automatically track all the paragraph changes and immediately notify its paragraphDelegate about them.
 
 ### Basic Algorhythm Description:
 The ParagraphDescriptor struct basically holds the identifier of the paragraph and its range in the text storage.
