@@ -331,7 +331,7 @@ public class DescriptedTextStorage: NSTextStorage {
 		}
 		else if consistency == .includeLastEmptyParagraph {
 			if lastRange.length == 0, lastRange.max < self.length {
-				let nextParagraph = self.substringParagraphRanges(in: NSRange(location: lastRange.location + 1, length: 0))
+				let nextParagraph = self.substringParagraphRanges(in: NSRange(location: lastRange.location, length: 1))
 				paragraphRanges[paragraphRanges.count - 1] = nextParagraph.first!
 			}
 		}
