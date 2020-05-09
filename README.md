@@ -1,6 +1,6 @@
 # NSTextStorage-with-paragraph-tracking
 
-This implementation is now considered as deprecated and extremely over-engineered. Please, visit the new repository with light-weight implementation: https://github.com/CineDev/ParagraphTextKit. Still, this implementation is working and might be used only if you need to set deploment target below 10.15 or iOS 13.
+This implementation is now considered as deprecated and extremely over-engineered. Please, visit the new repository with light-weight implementation: https://github.com/CineDev/ParagraphTextKit. Still, this implementation is fully functional and might be used only if you need to set deploment target below 10.15 or iOS 13.
 
 
 --------
